@@ -1,0 +1,3 @@
+import{jsx as _jsx}from"react/jsx-runtime";export function withoutToast(Component){return props=>{const copyEmail=()=>{const email="hey@ashpdeep.com";navigator.clipboard.writeText(email).then(function(){console.log("Email copied successfully!");},function(err){console.error("Could
+not copy email: ",err);});};return /*#__PURE__*/ _jsx(Component,{...props,onTap:copyEmail});};} export const __FramerMetadata__ = {"exports":{"withoutToast":{"type":"reactHoc","name":"withoutToast","annotations":{"framerContractVersion":"1"}},"__FramerMetadata__":{"type":"variable"}}}
+//# sourceMappingURL=./copyEmail.map
